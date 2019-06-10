@@ -1,8 +1,12 @@
-import React, { useState }from "react"
+import React, { useState, useEffect }from "react"
 import LogDisplay from "./LogDisplay";
 
 export default props =>{
+  let finalDiv = []
+   for(let i = 1; i<=localStorage.length; i++){
+     finalDiv.push(<LogDisplay logNumber = {i}/>)
+    }
     return(
-       <div>{(localStorage.getItem(2))?<div>{localStorage.getItem(2).toString()}</div>:"There are no previous logs"}</div>
-        )
+      <div>{finalDiv}</div>
+    )
 }
