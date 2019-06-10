@@ -3,7 +3,7 @@ import DisplayAllLogs from "./DisplayAllLogs";
 
 export default props =>{
 
-const [latestLog,getLog] = useState() //used to update the latest value
+const [latestLog,getLog] = (localStorage)?useState(localStorage.getItem(1)):useState() //used to update the latest value
 const buttonClicked = ()=>{
 const lastPoop = new Date().toLocaleDateString() + " "+new Date().toLocaleTimeString() //gets the date
 try{
