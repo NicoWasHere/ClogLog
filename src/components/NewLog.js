@@ -23,8 +23,10 @@ export default props => {
         >
             New Log
         </button>
-        <DisplayAllLogs/>
-        <ClearLogs/>
+        <DisplayAllLogs />
+        <ClearLogs updateFunc = {()=>{
+            setLatestLog("deleted")
+        }} />
         </div>
 
     )
