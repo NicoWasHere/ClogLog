@@ -25,7 +25,7 @@ export default props => {
                 position: absolute;
                 right: 0;
                 z-index: 1;
-                top: 10px;
+                top: 2px;
                 `}
             >
             {/* <img src = "/toilet.png" width = "10" height = "10" /> */}

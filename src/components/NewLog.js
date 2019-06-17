@@ -38,13 +38,13 @@ export default props => {
         <div css = {css`
             position: fixed;
             bottom: 0;
+            left: 0;
             width: 100vw;
-            padding: 10px 0;
+            padding: 2vh 0;
             background-color: rgb(220,220,220); 
-            text-align: center
             color: black;
             z-index: 3;
-            font-size: 20px;
+           
 
         `}>
         <button
@@ -54,6 +54,7 @@ export default props => {
              border-right: 1px solid black;
              outline: none;
              background-color: transparent;
+             font-size: 20px;
         `}
         >
             New Log
@@ -63,9 +64,11 @@ export default props => {
            doUpdate(!update)
         }}/>
         <ClearLogs updateFunc = {()=>{
-            
             setLatestLog("deleted")
         }} />
+        <div css = {css`
+        height: 8vh;
+        ` }></div>
         </div>
 
     )

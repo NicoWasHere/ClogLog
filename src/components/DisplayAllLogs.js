@@ -21,7 +21,7 @@ export default props =>{
         color: black;
         width: 340px;
         margin: 10px auto;
-        padding: 10px 0;
+        padding: 20px 0;
         position: relative;
         `}>
         <LogDisplay  updateFunc = {update} key = {i} logNumber = {i} css = {css}/>
