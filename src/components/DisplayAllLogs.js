@@ -8,7 +8,6 @@ export default props =>{
   const [doTheStuff, setDoTheStuff] = useState(false)
 
   const update = ()=>{
-    //finalDiv.splice(item-1,1)
     props.updateFunc()
   }
 
@@ -17,7 +16,7 @@ export default props =>{
       finalDiv.unshift(
         <div css = {css`
         font-family: system-ui, Verdana, Geneva, sans-serif; 
-        background-color: rgb(${255*(localStorage.length-i)/localStorage.length},${255*i/localStorage.length},82); 
+        background-color: rgb(${(doTheStuff)?255*(localStorage.length-i)/localStorage.length:255},${(doTheStuff)?255*i/localStorage.length:255},82); 
         text-align: center
         color: black;
         width: 340px;
