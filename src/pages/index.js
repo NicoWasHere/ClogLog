@@ -7,6 +7,7 @@ import { css } from "@emotion/core"
 export default () => (
     <div css = {css`
                 text-align: center;
+                font-family: system-ui, Verdana, Geneva, sans-serif; 
             `}>
                 <h1>Clog Log</h1>
                 <img src = "https://emojicdn.elk.sh/%F0%9F%92%A9"/>

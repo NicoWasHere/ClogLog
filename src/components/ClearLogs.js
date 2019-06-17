@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { css } from "@emotion/core" 
 export default props=>{
     const buttonClicked = () =>{

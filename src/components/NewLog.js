@@ -16,7 +16,7 @@ export default props => {
             minute: "numeric",
             second: "numeric"
         }) //gets the date
-        if(localStorage.getItem(localStorage.length) != lastPoop){
+        if(localStorage.getItem(localStorage.length) !== lastPoop){
         localStorage.setItem(localStorage.length+1,lastPoop) //adds it to local
         setLatestLog(lastPoop) //updates the latest on display
         doUpdate(!update)
@@ -40,7 +40,6 @@ export default props => {
             bottom: 0;
             width: 100vw;
             padding: 10px 0;
-            font-family: system-ui, Verdana, Geneva, sans-serif; 
             background-color: rgb(220,220,220); 
             text-align: center
             color: black;

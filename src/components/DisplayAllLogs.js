@@ -1,6 +1,5 @@
 import React, { useState, useEffect }from "react"
 import LogDisplay from "./LogDisplay";
-import ClearLogs from "../components/ClearLogs"
 import { css } from "@emotion/core" 
 
 
@@ -19,8 +18,6 @@ export default props =>{
         <div css = {css`
         font-family: system-ui, Verdana, Geneva, sans-serif; 
         background-color: rgb(${255*(localStorage.length-i)/localStorage.length},${255*i/localStorage.length},82); 
-
-       
         text-align: center
         color: black;
         width: 340px;
