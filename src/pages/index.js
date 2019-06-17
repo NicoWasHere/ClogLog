@@ -1,20 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 import NewLog from "../components/NewLog";
-import LogDisplay from "../components/LogDisplay";
-import ClearLogs from "../components/ClearLogs"
-import DisplayAllLogs from "../components/DisplayAllLogs";
+import { Helmet } from "react-helmet"
+import { css } from "@emotion/core" 
 
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Clog Log" />
-    <NewLog/>
-  </Layout>
+export default () => (
+    <div css = {css`
+                text-align: center;
+            `}>
+                <h1>Clog Log</h1>
+                <img src = "https://emojicdn.elk.sh/%F0%9F%92%A9"/>
+        <Helmet>
+            <title>Clog Log</title>
+            <link rel = "shortcut icon" href = "/toilet.png" />
+            <link rel = "apple-touch-icon" href ="/toiletIcon.png"/>
+            <meta name = "apple-mobile-web-app-capable" content = "yes"/>
+            <meta name = "apple-mobile-web-app-status-bar-style" content = "white"/>
+        </Helmet>
+        <NewLog/>
+    </div>
 )
-
-export default IndexPage
