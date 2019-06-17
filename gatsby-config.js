@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Clog Log`,
     description: `A website to track your bowel movements`,
+    author: 'Nico'
 
   },
   plugins: [
