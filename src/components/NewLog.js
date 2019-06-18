@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react"
 import DisplayAllLogs from "./DisplayAllLogs";
-import ClearLogs from "../components/ClearLogs"
-import { css } from "@emotion/core" 
+import ClearLogs from "../components/ClearLogs";
+import { css } from "@emotion/core" ;
+
 
 export default props => {
     const [update,doUpdate] = useState(true)
@@ -14,7 +15,7 @@ export default props => {
             day: "numeric",
             hour: "numeric",
             minute: "numeric",
-            second: "numeric"
+         //   second: "numeric"
         }) //gets the date
         if(localStorage.getItem(localStorage.length) !== lastPoop){
         localStorage.setItem(localStorage.length+1,lastPoop) //adds it to local
@@ -50,9 +51,8 @@ export default props => {
         <button
             onClick={buttonClicked} //runs the getter
             css = {css`
-             border-left: 1px solid black;
-             border-right: 1px solid black;
              outline: none;
+
              background-color: transparent;
              font-size: 20px;
         `}

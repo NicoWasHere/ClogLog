@@ -16,13 +16,14 @@ export default props =>{
       finalDiv.unshift(
         <div css = {css`
         font-family: system-ui, Verdana, Geneva, sans-serif; 
-        background-color: rgb(${(doTheStuff)?255*(localStorage.length-i)/localStorage.length:255},${(doTheStuff)?255*i/localStorage.length:255},82); 
+        background-color: hsla(${(doTheStuff)?120*(i)/localStorage.length:255},78%,62%,0.9); 
         text-align: center
         color: black;
         width: 340px;
         margin: 10px auto;
         padding: 20px 0;
         position: relative;
+        border-radius: 10px;
         `}>
         <LogDisplay  updateFunc = {update} key = {i} logNumber = {i} css = {css}/>
         </div>)

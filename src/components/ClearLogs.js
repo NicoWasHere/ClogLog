@@ -18,6 +18,7 @@ export default props=>{
         margin: 0px auto;
         padding: 10px 0;
         position: relative;
+        font-size: 20px;
         `}
             onClick={buttonClicked} //runs the getter
         >

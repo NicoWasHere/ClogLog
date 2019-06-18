@@ -2,6 +2,7 @@ import React from "react"
 import NewLog from "../components/NewLog";
 import { Helmet } from "react-helmet"
 import { css } from "@emotion/core" 
+import PoopGrapher from "../components/PoopGrapher";
 
 
 export default () => (
